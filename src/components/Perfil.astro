@@ -1,0 +1,14 @@
+---
+import { Image } from "astro:assets";
+import myPefil from '../../public/images/perfil.webp'
+---
+<section class="flex flex-col md:flex-row lg:flex-row max-w-2xl h-full p-8 rounded-3xl bg-gray-800 justify-center items-center gap-6">
+    <article class="flex flex-col items-center justify-center gap-4">
+        <figure class="w-28 h-28">
+            <Image class="object-cover rounded-full w-28 h-28" src={myPefil} alt="fotografía de aldo beltrán">
+        </figure>
+        <h1 class="font-semibold text-start">Aldo Beltrán</h1>
+    </article>   
+    <p>Soy un apasionado <span class="font-semibold">Frontend Web Developer</span> con un amor por la fotografía y la música, especialmente la guitarra. Me motiva aprender constantemente y aplicar nuevas tecnologías en mis proyectos. Mi curiosidad me lleva a explorar nuevos lugares, lo que enriquece mi creatividad y enfoque en el desarrollo web.
+    </p>
+</section>
