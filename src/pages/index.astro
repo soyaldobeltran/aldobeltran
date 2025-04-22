@@ -6,6 +6,7 @@ import SecondBtn from "../components/SecondBtn.astro";
 import About from "../components/About.astro";
 import Perfil from "../../public/images/perfil.webp";
 import Image from "astro/components/Image.astro";
+import Portfolio from "../components/Portfolio.astro";
 ---
 
 <Layout
@@ -25,12 +26,14 @@ import Image from "astro/components/Image.astro";
     title="Sobre Mi"
     text="Soy Aldo Beltrán, diseñador y estratega digital. Ayudo a emprendedores a construir marcas que conectan de verdad. Diseño con propósito, claridad y elegancia."
   >
-    <Image
-      class="w-[250px] max-sm:w-full h-full"
-      src={Perfil}
-      alt="Fotografía en blanco y negro de Aldo Beltrán"
-      class="w-full h-full object-cover"
-      loading="lazy"
-    />
+    <figure class="w-9/12">
+      <Image
+        src={Perfil}
+        alt="Fotografía en blanco y negro de Aldo Beltrán"
+        class="w-full h-full object-cover"
+        loading="lazy"
+      />
+    </figure>
   </About>
+  <Portfolio />
 </Layout>
