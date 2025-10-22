@@ -1,22 +1,23 @@
 ---
+import Image from "astro/components/Image.astro";
+import Logo from "../../public/images/aldo_logo.png";
+
 interface Props {
   title: string;
   subtitle: string;
 }
-const { title, subtitle } = Astro.props;
+const { title, subtitle } = Astro.props as Props;
 ---
 
 <header
-  class="bg-[#1F3A6D] w-screen h-screen flex justify-center
-items-center px-12"
+  class="bg-[#22313f] w-screen h-screen flex justify-center
+items-center px-2"
 >
-  <section
-    class="max-w-screen-xl flex flex-col items-start justify-center gap-12"
-  >
-    <h1 class="text-8xl max-xl:text-6xl font-bold text-white">
-      {title}
-    </h1>
-    <h2 class="text-2xl max-xl:text-lg text-[#E0E0E0]">{subtitle}</h2>
+  <section class="max-w-screen-xl flex flex-col items-center justify-center">
+    <Image src={Logo} alt="Logo Aldo" class="max-w-64" loading="eager" />
+    <h2 class="text-sm text-[#F6F3EE] text-center font-light italic">
+      {subtitle}
+    </h2>
 
     <slot />
   </section>
