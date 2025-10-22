@@ -1,6 +1,6 @@
 ---
 import Image from "astro/components/Image.astro";
-import Logo from "../../public/images/aldo_logo.png";
+import Logo from "../../public/images/aldo_logo_arena-palido.svg";
 
 interface Props {
   title: string;
@@ -13,8 +13,10 @@ const { title, subtitle } = Astro.props as Props;
   class="bg-[#22313f] w-screen h-screen flex justify-center
 items-center px-2"
 >
-  <section class="max-w-screen-xl flex flex-col items-center justify-center">
-    <Image src={Logo} alt="Logo Aldo" class="max-w-64" loading="eager" />
+  <section
+    class="max-w-screen-xl flex flex-col items-center justify-center gap-8"
+  >
+    <Image src={Logo} alt="Logo Aldo" class="w-32" loading="eager" />
     <h2 class="text-sm text-[#F6F3EE] text-center font-light italic">
       {subtitle}
     </h2>
