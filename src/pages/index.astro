@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import Nav from "../components/Nav.astro";
 import FirtsBtn from "../components/FirtsBtn.astro";
 import SecondBtn from "../components/SecondBtn.astro";
 import About from "../components/About.astro";
@@ -14,8 +15,11 @@ import Portfolio from "../components/Portfolio.astro";
   title="Aldo Beltrán | Diseño con Calma"
   keywords="Aldo Beltrán, diseño con calma, lujo sobrio, elegancia digital, diseñador web minimalista, presencia estética"
 >
-  <Header
-    title="Diseño marcas que comunican, conectan y convierten"
-    subtitle='"La calma es mi método, la excelencia mi resultado."'
-  />
+  <main>
+    <Nav />
+    <Header
+      title="Diseño marcas que comunican, conectan y convierten"
+      subtitle='"La calma es mi método, la excelencia mi resultado."'
+    />
+  </main>
 </Layout>
