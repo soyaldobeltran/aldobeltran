@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.navbar{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(34px);
+  -webkit-backdrop-filter: blur(34px);
+    padding: 0 1rem;
+    img{
+        height: 50%;
+    }
+}
+
+.nav-links{
+    display: none;
+}
+
+.portada-inicio{
+    background: url("../assets/images/portada.webp") no-repeat center / cover;
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (width >= 481px) {
+    
+}
