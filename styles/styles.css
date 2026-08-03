@@ -72,12 +72,12 @@ main{
     h1{
         font-size: 2.25rem;
         width: 100%;
-        max-width: 16.75rem;
+        max-width: 18.75rem;
     }
     p{
         font-size: 1rem;
         width: 100%;
-        max-width: 16.75rem;
+        max-width: 18.75rem;
     }
 }
 
