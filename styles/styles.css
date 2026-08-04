@@ -120,6 +120,10 @@ main{
 }
 
 @media screen and (width >= 481px) {
+    main{
+        margin: 0 auto;
+        width: 90%;
+    }
     .about{
         flex-direction: row;
     }
