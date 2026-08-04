@@ -85,13 +85,13 @@ main{
     padding: 6rem 0px;
     h2{
             font-size: 2.25rem;
-            padding: 0px 0px 0px .5rem;
+            padding: 0px 0px 0px 1rem;
         }
     div{
         width: 100%;
         height: auto;
         display: flex;
-        padding: 3rem 0px 0px .5rem;
+        padding: 3rem 0px 0px 1rem;
         gap:2rem;
         flex-direction: row;
         justify-content: flex-start;
