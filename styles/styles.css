@@ -97,6 +97,7 @@ main{
         justify-content: flex-start;
         align-items: start;
         overflow-x: scroll;
+        z-index: 100;
         
         article{
             width: 100%;
